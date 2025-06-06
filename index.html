@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Blog Layout</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Custom styles for spacing and colors (optional) */
+          .card {
+        margin: 1.5rem;
+        display: flex; 
+        flex-direction: column; 
+        height: 100%; 
+    }
+    .card-img-top {
+        width: 100%;
+        height: 200px;
+        object-fit: cover; 
+    }
+    .card-body {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1; 
+        justify-content: space-between;
+    }
+ 
+    .card-title {
+        min-height: 3rem;
+        margin-bottom: 0.5rem;
+    }
+    .btn {
+        margin-top: auto;
+    }
+    .footer {
+        background-color: #f8f9fa;
+        padding: 2rem 0;
+        border-top: 1px solid #e9ecef;
+    }
+    .footer .social-icons a {
+        color: #495057;
+        margin: 0 10px;
+        font-size: 1.5rem;
+    }
+  
+    .footer .social-icons a:hover {
+        color: #007bff;
+    }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#"><B>SURAJ</b></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-4">
+        <h1 class="mb-4 text-center">Latest Blog Posts</h1>
+        <div class="row">
+            <div class="col-md-6 col-lg-4 d-flex">
+                <div class="card">
+                    <img src="https://th.bing.com/th/id/R.1f90729ce60dea7c08206ba3d6bbb7d2?rik=zYS%2bZ0hTQfLJww&riu=http%3a%2f%2frgitech.weebly.com%2fuploads%2f1%2f0%2f1%2f4%2f101493456%2fweb-development_orig.jpg&ehk=O%2bwuhUOOBiUqsERj%2fF4c2WefPKUgt%2fasieFq%2fBfNT7w%3d&risl=&pid=ImgRaw&r=0" class="card-img-top" alt="Blog Image 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Understanding Web Development Basics</h5>
+                        <p class="card-text">A brief introduction to the fundamental concepts of web development, covering HTML, CSS, and JavaScript.</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 d-flex">
+                <div class="card">
+                    <img src="https://admin.12grids.com/uploads/blogs/original_cover_images/future-of-responsive-web-design-12grids.jpg" class="card-img-top" alt="Blog Image 2">
+                    <div class="card-body">
+                        <h5 class="card-title">The Power of Responsive Design</h5>
+                        <p class="card-text">Learn why responsive design is crucial in today's multi-device world and how Bootstrap helps.</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 d-flex">
+                <div class="card">
+                    <img src="https://th.bing.com/th/id/OIP.Xoy4coiOYoEfEA4TdgRwUgHaE8?r=0&rs=1&pid=ImgDetMain" class="card-img-top" alt="Blog Image 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Getting Started with Frontend Frameworks</h5>
+                        <p class="card-text">An overview of popular frontend frameworks like React, Angular, and Vue.js.</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 d-flex">
+                <div class="card">
+                    <img src="https://www.liveabout.com/thmb/z_RXiDK2cxFRjPzyWxBiAQLpWx8=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/backenddeveloper-2502825a14ff440eb775dc4244e7ed4d.png" class="card-img-top" alt="Blog Image 4">
+                    <div class="card-body">
+                        <h5 class="card-title">Backend Development Essentials</h5>
+                        <p class="card-text">Explore the server-side of web development with common programming languages and databases.</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 d-flex">
+                <div class="card">
+                    <img src="https://th.bing.com/th/id/OIP.ed9hvtAc42RmxjfMu3DyrwHaFP?r=0&rs=1&pid=ImgDetMain" class="card-img-top" alt="Blog Image 5">
+                    <div class="card-body">
+                        <h5 class="card-title">Database Management for Web Apps</h5>
+                        <p class="card-text">A dive into various database types and their applications in web development.</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 d-flex">
+                <div class="card">
+                    <img src="https://amifactory.team/blog/content/images/2019/05/0-blog-cover-3.png" class="card-img-top" alt="Blog Image 6">
+                    <div class="card-body">
+                        <h5 class="card-title">Deployment Strategies for Web Projects</h5>
+                        <p class="card-text">Understanding how to deploy your web applications to live servers.</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container text-center">
+            <p>&copy; 2025 My Blog. All rights reserved.</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
